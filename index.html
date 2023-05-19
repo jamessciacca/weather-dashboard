@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="d-flex header bg-primary m-2 p-2 text-white justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main class="m-5 text-align-center">
+        <div class="row m-0 d-block d-md-flex">
+            <section class="col-12 col-md-3">
+                <form id="search-form">
+                    <h2>Search for a City:</h2>
+                    <div id="error-container" class="error-msg"></div>
+                    <input type="text" id="city-search" placeholder="Enter a City Name" class="w-100 mb-2">
+                    <button type="submit" id="searchWeatherBtn" class="w-100 mb-3 btn btn-secondary">Search</button>
+                </form>
+                <div id="search-container"></div>
+            </section>
+
+            <section class="col-12 col-md-9">
+                <div id="current-weather" class="p-3 mb-2 border border-primary rounded">
+                    <h2 id="current-heading" class="forecast-date"></h2>
+                    <div class="row">
+                        <div class="data-container col-4" id="current-data">
+                            <h2 class="fw-bold" id="city-name"></h2>
+                            <p id="temp"></p>
+                            <p id="wind"></p>
+                            <p id="humid"></p>
+                        </div>
+                        <div class="col-4" id="spacer"></div>
+                        <div id="current-icon" class="col-4"></div>
+                    </div>
+                </div>
+
+                <div id="forecast" class="p-3">
+                    <h2 class="d-block">5-Day Forecast</h2>
+                    <div class="row justify-content-around d-block d-xl-flex mr-0" id="forcastContainer"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
