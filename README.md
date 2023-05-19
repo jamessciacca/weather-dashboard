@@ -1,6 +1,6 @@
 # Weather Dashboard API 
 
-Deployed Link - [https://jamessciacca.github.io/fitness-fusion-workout-maker/](https://jamessciacca.github.io/weather-dashboard/)
+Deployed Link - (https://jamessciacca.github.io/weather-dashboard/)
 
 ## Description
 
